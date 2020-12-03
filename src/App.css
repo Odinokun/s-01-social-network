@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina:wght@100;400;600;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Texturina", serif;
+  font-size: 16px;
+  line-height: 1.38;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #121212;
+}
+
 .app-wrapper {
   display: grid;
   grid-template-rows: 60px 1fr;
@@ -36,12 +55,15 @@
   grid-area: main;
   background-color: #ccc;
 }
-.main__top-img {
+/* end MAIN */
+
+/* begin PROFILE */
+.profile__top-img {
   width: 100%;
   height: 250px;
   margin-bottom: 50px;
 }
-.main__top-img img {
+.profile__top-img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -49,17 +71,17 @@
   object-position: center top;
 }
 
-.main-user {
+.profile-user {
   display: flex;
   align-items: flex-start;
 }
-.main-user__ava {
+.profile-user__ava {
+  flex: none;
   width: 140px;
   height: 140px;
-  flex: none;
   margin-right: 50px;
 }
-.main-user__ava img {
+.profile-user__ava img {
   display: block;
   width: 100%;
   height: 100%;
@@ -67,25 +89,25 @@
   object-position: 50%;
 }
 
-.main-posts__item {
+.profile-posts__item {
   display: flex;
   align-items: flex-start;
 }
-.main-posts__ava {
+
+.profile-posts__ava {
+  overflow: hidden;
+  flex: none;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
   margin-right: 50px;
-  flex: none;
+  border-radius: 50%;
 }
-.main-posts__ava img {
+
+.profile-posts__ava img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.main-posts__text {
-}
-/* end MAIN */
+/* end PROFILE */
